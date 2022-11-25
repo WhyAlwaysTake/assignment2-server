@@ -6,10 +6,10 @@ const cors = require("cors");
 //const e = require("express");
 
 const client = new Client({
-    host: "ec2-52-48-159-67.eu-west-1.compute.amazonaws.com:5432",
-    user: "hwjvoifhirutgq",
-    database: "dafba6kv5dq35m",
-    password: "834232899f935f0f5dfaddd43ed7015fab7adec8d6a372e59ddb1407f4e2a341",
+    host: "localhost:3000",
+    user: "postgres",
+    database: "assignment2",
+    password: "200915Tima*",
 });
 
 client.connect();
