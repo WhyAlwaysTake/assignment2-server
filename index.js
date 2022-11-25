@@ -6,10 +6,10 @@ const cors = require("cors");
 //const e = require("express");
 
 const client = new Client({
-    host: "localhost",
-    user: "postgres",
-    database: "assignment2",
-    password: "200915Tima*",
+    host: "ec2-52-48-159-67.eu-west-1.compute.amazonaws.com:5432",
+    user: "hwjvoifhirutgq",
+    database: "dafba6kv5dq35m",
+    password: "834232899f935f0f5dfaddd43ed7015fab7adec8d6a372e59ddb1407f4e2a341",
 });
 
 client.connect();
@@ -401,6 +401,6 @@ app.put("/api/put/Record/:email", (req, res) => {
 app.get("/", (req, res) => {
 
 })
-app.listen(process.env.Port ||4000, () => {
-    console.log("Your port is 4000");
+app.listen(process.env.PORT || 4000, () => {
+    console.log("Started");
 })
